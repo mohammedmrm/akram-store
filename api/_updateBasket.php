@@ -119,5 +119,5 @@ if($v->passes() && $oldOrder_err == "") {
            'oldOrder'=>$oldOrder_err,
            ];
 }
-echo json_encode(['code'=>200,'message'=>$msg,'success'=>$success,'error'=>$error,'data'=>$data]);
+echo json_encode(['code'=>200,'message'=>$msg,'success'=>$success, $v->errors(),'error'=>$error,'data'=>$data]);
 ?>
