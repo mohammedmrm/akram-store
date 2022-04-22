@@ -90,7 +90,6 @@ if ($v->passes() && $img_err == "") {
           setData($con, $sql, [$id, $imgPath]);
           $x = 1;
         }
-
         $i++;
       }
     }
